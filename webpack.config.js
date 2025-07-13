@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
  module.exports = {
-    mode: "development",
+    mode: 'production',
     entry: {      
       // main pages & navigation
       home: './src/home.js',
@@ -41,7 +41,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
       }),
       // menu item pages
       new HtmlWebpackPlugin({
-        template: './src/menu.html', // or create specific templates for each category
+        template: './src/menu.html', 
         filename: 'salads.html',
         chunks: ['navigation', 'menuNavigation', 'salads']
       }),
@@ -65,8 +65,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
         filename: 'wine.html',
         chunks: ['navigation', 'menuNavigation', 'wine']
       })
-
-
     ],   
     module: {
       rules: [
@@ -80,11 +78,5 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
         },
       ],
     },
-    // optimization: {
-    //   splitChunks: {
-    //     chunks: 'all',
-    //   },
-    // },
-
  };
 
