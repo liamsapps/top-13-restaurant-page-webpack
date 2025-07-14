@@ -3,6 +3,7 @@ import { setupNavigation } from './navigation.js';
 import imgChef from "./images/chef.jpeg";
 
 import './style.css';
+import './about.css';
    
 console.log("In about.js test message!");
 
@@ -54,7 +55,7 @@ function addContent() {
 
     const bottomLeftHeading = document.createElement("h2");
     bottomLeftHeading.textContent = "Our Address";
-    // const addressList = document.createElement("ul");
+
     const restoAddress = document.createElement("p");
     restoAddress.className = "use-line-break";
     restoAddress.textContent = "123 Happy Lane\nMontreal, QC\nH3Z4L3" 
@@ -133,7 +134,7 @@ function addContent() {
 
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    addContent();
-    setupNavigation(); 
-});
+setupNavigation(); 
+addContent();
+
+

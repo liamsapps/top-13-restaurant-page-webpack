@@ -1,6 +1,8 @@
 import { setupNavigation } from './navigation.js';
 
 import './style.css';
+import './home.css';
+
 import imgPastaMeatballs1 from "./images/pasta_meatballs.png";
 import imgOvenPizza2 from "./images/oven-pizza.jpg";
 import imgPenneBroccoli3 from "./images/penne_broccoli.png";
@@ -66,7 +68,7 @@ function addContent() {
     
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    addContent();
-    setupNavigation(); 
-});
+setupNavigation(); 
+addContent();
+
+

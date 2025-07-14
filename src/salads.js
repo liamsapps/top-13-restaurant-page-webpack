@@ -1,10 +1,4 @@
-// import { setupNavigation } from './navigation.js';
-// import { setupMenuNavigation } from './menuNavigation.js';
 import { addContent } from './menu.js';
-
-import './style.css';
-
-console.log("In salads.js test message!");
 
 function addSaladContent() {
     const content = document.querySelector("#content");
@@ -24,20 +18,16 @@ function addSaladContent() {
     menuPrice1.className = "menu-item";
     
     const salad_1_Title = document.createElement("h2");
-    // salad_1_Title.className = "item-left";
     salad_1_Title.textContent = "GREENS & VEGETABLES";
         
     const salad_1_Desc = document.createElement("p");
-    // salad_1_Desc.className = "item-left";
     salad_1_Desc.textContent = "Greens, radicchio and vegetables";
     
     const salad_1_Price = document.createElement("p");
-    // salad_1_Price.className = "item-left-price";
     salad_1_Price.textContent = "$8 / $12";
     
     menuItem1.appendChild(salad_1_Title);
     menuItem1.appendChild(salad_1_Desc);
-    // menuItem1.appendChild(salad_1_Price);
     menuPrice1.appendChild(salad_1_Price);
     
     menuItems.appendChild(menuItem1);
@@ -50,22 +40,17 @@ function addSaladContent() {
     menuPrice2.className = "menu-item";
     
     const salad_2_Title = document.createElement("h2");
-    // salad_1_Title.className = "item-left";
     salad_2_Title.textContent = "CÉSAR";
         
     const salad_2_Desc = document.createElement("p");
-    // salad_2_Desc.className = "use-line-break";
-    // salad_2_Desc.textContent = "Parmesan Reggiano, homemade croutons\nPancetta on request";
     salad_2_Desc.textContent = "Parmesan Reggiano, homemade croutons (Pancetta on request)";
     
     
     const salad_2_Price = document.createElement("p");
-    // salad_1_Price.className = "item-left-price";
     salad_2_Price.textContent = "$9 / $15";
     
     menuItem2.appendChild(salad_2_Title);
     menuItem2.appendChild(salad_2_Desc);
-    // menuItem1.appendChild(salad_1_Price);
     menuPrice2.appendChild(salad_2_Price);
     
     menuItems.appendChild(menuItem2);
@@ -78,15 +63,12 @@ function addSaladContent() {
     menuPrice3.className = "menu-item";
     
     const salad_3_Title = document.createElement("h2");
-    // salad_1_Title.className = "item-left";
     salad_3_Title.textContent = "KALE";
         
     const salad_3_Desc = document.createElement("p");
-    // salad_1_Desc.className = "item-left";
     salad_3_Desc.textContent = "Chicory, broccoli, asparagus, apples, roasted pecans, pecorino and buttermilk vinaigrette";
     
     const salad_3_Price = document.createElement("p");
-    // salad_1_Price.className = "item-left-price";
     salad_3_Price.textContent = "$18";
     
     menuItem3.appendChild(salad_3_Title);
@@ -103,20 +85,16 @@ function addSaladContent() {
     menuPrice4.className = "menu-item";
     
     const salad_4_Title = document.createElement("h2");
-    // salad_1_Title.className = "item-left";
     salad_4_Title.textContent = "ENDIVES";
         
     const salad_4_Desc = document.createElement("p");
-    // salad_1_Desc.className = "item-left";
     salad_4_Desc.textContent = "Endive, radicchio, walnuts, blue cheese, herbs and apples";
     
     const salad_4_Price = document.createElement("p");
-    // salad_1_Price.className = "item-left-price";
     salad_4_Price.textContent = "$18";
     
     menuItem4.appendChild(salad_4_Title);
     menuItem4.appendChild(salad_4_Desc);
-    // menuItem1.appendChild(salad_1_Price);
     menuPrice4.appendChild(salad_4_Price);
     
     menuItems.appendChild(menuItem4);
@@ -129,37 +107,23 @@ function addSaladContent() {
     menuPrice5.className = "menu-item";
     
     const salad_5_Title = document.createElement("h2");
-    // salad_1_Title.className = "item-left";
     salad_5_Title.textContent = "ROQUETTE";
         
     const salad_5_Desc = document.createElement("p");
-    // salad_1_Desc.className = "item-left";
     salad_5_Desc.textContent = "Arugula, cherry tomatoes, roasted seeds and parmesan cheese";
     
     const salad_5_Price = document.createElement("p");
-    // salad_1_Price.className = "item-left-price";
     salad_5_Price.textContent = "$9 / $15";
     
     menuItem5.appendChild(salad_5_Title);
     menuItem5.appendChild(salad_5_Desc);
-    // menuItem1.appendChild(salad_1_Price);
     menuPrice5.appendChild(salad_5_Price);
     
     menuItems.appendChild(menuItem5);
     menuItems.appendChild(menuPrice5);
 
-    content.appendChild(menuItems);
-
-    // MENU NAV
-    // const menuNav = document.createElement("nav");
-    // menuNav.className = "menu-nav";
-
-    
+    content.appendChild(menuItems);   
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    addContent();
-    // setupNavigation();
-    // setupMenuNavigation();
-    addSaladContent();
-});
+addContent();
+addSaladContent();
